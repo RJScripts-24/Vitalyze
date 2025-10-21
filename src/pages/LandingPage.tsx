@@ -4,6 +4,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Activity, Building2, Heart, Stethoscope, Shield, Zap, Brain, TrendingUp, Users, Clock, CheckCircle, BarChart3 } from 'lucide-react';
 
+// Import video via Vite so it will be copied to dist and the URL resolved
+import heroVideo from '@/assets/video.mp4';
+
+function VideoBackground() {
+  return (
+    <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+      <source src={heroVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  );
+}
+
 export default function LandingPage() {
   const navigate = useNavigate();
 
@@ -89,16 +101,10 @@ export default function LandingPage() {
       {/* Video Background Section */}
       <section className="relative h-[600px] overflow-hidden">
         {/* Background Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/src/assets/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {/* Import the video so Vite resolves and copies it to the build output */}
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        {/* @ts-ignore */}
+        <VideoBackground />
         
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />

@@ -3,6 +3,17 @@ import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 import { Heart, Shield, Brain, TrendingUp } from "lucide-react";
 
+import heroVideo from '@/assets/video.mp4';
+
+function VideoBackground() {
+  return (
+    <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+      <source src={heroVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  );
+}
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -15,16 +26,8 @@ const Index = () => {
       {/* Video Background Section */}
       <section className="relative h-[600px] overflow-hidden">
         {/* Background Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/src/assets/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {/* Use imported video so Vite resolves asset path in production */}
+        <VideoBackground />
         
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />
