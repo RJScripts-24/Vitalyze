@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assests/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitalyze - Smart Healthcare AI Platform</title>
+    <meta name="description" content="Vitalyze - Smart, Predictive, and Human-Centered Healthcare. AI-powered disease risk analysis and patient management." />
+    <meta name="author" content="Vitalyze Healthcare" />
+
+    <meta property="og:title" content="Vitalyze - Smart Healthcare AI Platform" />
+    <meta property="og:description" content="Smart, Predictive, and Human-Centered Healthcare with AI-powered disease risk analysis." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assests/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vitalyze" />
+    <meta name="twitter:image" content="/assests/logo.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/cursor-effects@latest/dist/cursor-effects.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        if (typeof window.CursorEffects === 'function') {
+          new window.CursorEffects({
+            shape: 'star',
+            color: '#00bcd4',
+            size: 24,
+            amount: 16,
+            fade: 0.7,
+          });
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

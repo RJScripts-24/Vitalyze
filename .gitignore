@@ -1,0 +1,133 @@
+# -----------------------------
+# Node / JavaScript
+# -----------------------------
+node_modules/
+**/node_modules/
+
+# npm / yarn / pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Lockfiles are usually committed (do NOT ignore package-lock.json unless you know what you're doing)
+
+# Environment files (sensitive)
+.env
+.env.*
+
+# -----------------------------
+# Vite / Frontend build outputs
+# -----------------------------
+dist/
+.vite/
+build/
+out/
+
+# -----------------------------
+# Python
+# -----------------------------
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------------
+# Machine learning / large artifacts
+# -----------------------------
+# Trained model files and large binary artifacts
+*.joblib
+*.pkl
+*.h5
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+
+# Large dataset files (adjust if you want to keep sample datasets in repo)
+*.csv
+*.xlsx
+*.xls
+
+# -----------------------------
+# Logs, reports, and coverage
+# -----------------------------
+logs/
+*.log
+*.log.*
+coverage/
+.nyc_output/
+coverage-final.json
+
+# Test output
+test_output/
+
+# -----------------------------
+# OS generated files
+# -----------------------------
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# IDEs and editors
+# -----------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# -----------------------------
+# Misc / tooling
+# -----------------------------
+# TypeScript build info
+*.tsbuildinfo
+
+# Parcel / cache
+.parcel-cache/
+
+# Optional: local env for editors, local debug
+.local
+
+# Keep this repo-specific patterns (backend models, logs, etc.)
+/backend/node_modules/
+/backend/model/*.joblib
+/backend/model/*.pkl
+/model/*.joblib
+/model/*.pkl
+
+# End of .gitignore
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
