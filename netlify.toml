@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[dev]
+  command = "npm run dev"
+  port = 5173
+
+# If your frontend is deployed from the `backend` or a subfolder, set the 'base' or
+# configure Netlify to use that directory. By default this config assumes the
+# frontend lives at the repository root and Vite writes to `dist/`.
