@@ -1,4 +1,6 @@
-import rawCsv from '../../enhanced_hackathon_dataset.csv?raw';
+// Import dataset from project root using a root-relative path so Vite can resolve it
+// The CSV file is located at the repository root: /enhanced_hackathon_dataset.csv
+import rawCsv from '/enhanced_hackathon_dataset.csv?raw';
 import Papa from 'papaparse';
 import type { PatientRecord } from './institutionData';
 

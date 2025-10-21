@@ -53,6 +53,12 @@ __pycache__/
 *.xlsx
 *.xls
 
+# If you need a specific dataset included in the repo (e.g. for the demo),
+# explicitly allow it here and commit it. Replace or add additional filenames
+# as needed. Do NOT allow secrets or huge production datasets.
+!enhanced_hackathon_dataset.csv
+!/src/assets/**/*.csv
+
 # Logs, reports, and coverage
 logs/
 *.log
