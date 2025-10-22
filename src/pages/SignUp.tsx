@@ -54,6 +54,12 @@ export default function SignUp() {
           <div className="space-y-2">
             <h1 className="text-3xl font-semibold bg-gradient-to-r from-[#80C342] to-[#FFC400] bg-clip-text text-transparent">Get Started Now</h1>
             <p className="text-sm text-muted-foreground">Create an account to access personalized health insights</p>
+            <div className="p-3 rounded-md bg-gradient-to-r from-[#80C342]/10 to-[#FFC400]/10 border border-[#80C342]/20">
+              <p className="text-sm text-muted-foreground">
+                <strong className="font-medium text-[#2F6F10]">Note: </strong>
+                To view the institution dashboard sign up with an <span className="font-semibold text-primary">@vitalyze.ac.in</span> email
+              </p>
+            </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-6">
             {errors.general && <div className="p-3 text-sm text-red-600 bg-red-50 border border-red-200 rounded-md">{errors.general}</div>}
