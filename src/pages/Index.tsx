@@ -165,9 +165,7 @@ const Index = () => {
               <li>
                 <Link to="/signup" className="hover:underline">Sign Up</Link>
               </li>
-              <li>
-                <Link to="/" className="hover:underline">Landing Page</Link>
-              </li>
+              {/* Landing Page link removed by request */}
             </ul>
           </div>
           {/* Contact Us */}
