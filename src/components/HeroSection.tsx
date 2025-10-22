@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
   const navigate = useNavigate();
   return (
-  <section id="hero" className="relative min-h-screen flex items-center overflow-hidden p-0 m-0 bg-background">
+  <section id="hero" className="relative min-h-[65vh] flex items-center overflow-hidden p-0 m-0 bg-background">
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left: Text */}
-          <div className="py-16 md:py-24 md:pr-6">
+          <div className="py-10 md:py-16 md:pr-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in text-left">
               <span style={{ color: '#0099FF' }}>A </span>
               <span style={{ color: '#005CBF' }}>professional </span>
@@ -51,7 +51,7 @@ const HeroSection = () => {
               loop
               playsInline
               className="w-full max-w-xl h-auto rounded-xl object-contain bg-black/5"
-              style={{ maxHeight: '70vh' }}
+              style={{ maxHeight: '55vh' }}
             />
           </div>
       </div>
