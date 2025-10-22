@@ -6,8 +6,7 @@ const HeroSection = () => {
   return (
   <section id="hero" className="relative min-h-screen flex items-center overflow-hidden p-0 m-0 bg-background">
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-4 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left: Text */}
           <div className="py-16 md:py-24 md:pr-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in text-left">
@@ -28,6 +27,7 @@ const HeroSection = () => {
                 style={{ background: '#F7CB05' }}
                 onMouseEnter={(e) => (e.currentTarget.style.background = '#52F705')}
                 onMouseLeave={(e) => (e.currentTarget.style.background = '#F7CB05')}
+                onClick={() => navigate('/signup')}
               >
                 Get Started
               </Button>
@@ -54,7 +54,6 @@ const HeroSection = () => {
               style={{ maxHeight: '70vh' }}
             />
           </div>
-        </div>
       </div>
     </section>
   );
